@@ -1,0 +1,5 @@
+name: module
+description: Generate folders as per mobile guideline
+vars:
+  - name
+
