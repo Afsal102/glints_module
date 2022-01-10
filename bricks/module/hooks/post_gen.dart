@@ -22,5 +22,9 @@ void main() async {
         .create(recursive: true);
     createdPaths.add(dir.path);
   }
+  final currentPath = Directory.current.path;
+
+  ///- delete the git keep as this is used as a placeholder to fix empty brick issue
+  await File("$currentPath/.gitKeep").delete();
   print('-> create subdirs $createdPaths');
 }
